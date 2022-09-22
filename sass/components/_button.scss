@@ -1,6 +1,6 @@
 
 .btn{
-
+    &,
     &:link,
     &:visited{
         text-transform: uppercase;
@@ -12,6 +12,8 @@
         position: relative;
         font-size: $default-font-size;
     
+        border: none;
+        cursor: pointer;
     }
 
     &--white {
@@ -19,6 +21,13 @@
         color: $color-grey-dark;
         &::after{
         background-color: $color-white;}
+        }
+
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+        &::after{
+        background-color: $color-primary;}
         }
     
     
@@ -33,9 +42,11 @@
             
     }
 
-    &:active{
-    transform: translateY(-1px);
-    box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    &:active,
+    &:focus{
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
     }
 
     &::after {
