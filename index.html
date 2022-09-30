@@ -13,6 +13,32 @@
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
     <body>
+
+        <div class="navigation">
+            <input type="checkbox"  class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"> <a href="#" class="navigation__link"><span>1</span> About Natours</a></li>
+                    <li class="navigation__item"> <a href="#" class="navigation__link"><span>2</span> Your Benefits</a></li>
+                    <li class="navigation__item"> <a href="#" class="navigation__link"><span>3</span> Populat Tours</a></li>
+                    <li class="navigation__item"> <a href="#" class="navigation__link"><span>4</span> Stories</a></li>
+                    <li class="navigation__item"> <a href="#" class="navigation__link"><span>5</span> Book Now</a></li>
+
+
+                </ul>
+            </nav>
+
+
+        </div>
+
+
         <header class="header">
             <div class="header__logo-box">
                 <img src="\img\logo-white.png" alt="logo" class="header__logo">
@@ -337,25 +363,50 @@
 
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="img/logo-green-2x.png" alt="Full logo" class="footer_logo">
+                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
             </div>
             <div class="row">
                 <div class="col-1-of-2">
                     <div class="footer__navigation">
-                        <ul class="footer-list">
-                            <li class="footer__item"> <a href="#" class="footer__link">Company</a></li>
-                            <li class="footer__item"> <a href="#" class="footer__link">Contact us</a></li>
-                            <li class="footer__item"> <a href="#" class="footer__link">Cariers</a></li>
-                            <li class="footer__item"> <a href="#" class="footer__link">Privacy Policy</a></li>
-                            <li class="footer__item"> <a href="#" class="footer__link">Teras</a></li>
-
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Teras</a></li>
                         </ul>
                     </div>
+                </div>
+
+                <div class="col-1-of-2">
+                    <p class="footer__copyright">
+                        Built my <a href="#" class="footer__link">Jonas Schmedtmann</a> for this online course <a href="#" class="footer__link">Advanced CSS and Sass</a> Copyright by &copy; by Jonas Schmedtmnann.You are 100% allowed to use this webpage for both personal and commercial use but NOT to claim it as your own design.A credit to the original author, Jonas Schmedtmann,is of highly appreciated!
+                    </p>
+
                 </div>
 
             </div>
 
         </footer>
+
+        <div class="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                    <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <h2 class="heading-secondary">Start booking now</h2>
+                    <h3 class="heading-tertiary">Important &ndash; Please read these terms before booking</h3>
+                    <p class="popup_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id iaculis ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum, mauris et tristique volutpat, quam sem volutpat lacus, vel faucibus tortor enim et turpis. Phasellus ullamcorper metus id rutrum porta. Quisque interdum orci id bibendum pulvinar. Integer vitae purus lacinia erat aliquam hendrerit. Pellentesque vestibulum rutrum dolor, ac ornare purus fringilla ac. Ut iaculis porttitor turpis. Aenean non erat metus. Praesent est nulla, ultrices eget odio vel, venenatis convallis lorem. Pellentesque auctor ipsum in ornare eleifend. Quisque pharetra facilisis risus eu bibendum. Duis efficitur odio quis erat tristique finibus.
+                    </p>
+                    <a href="#" class="btn btn--green">Book now</a>
+                </div>
+
+            </div>
+        </div>
+
         
     </body>
 </html>
